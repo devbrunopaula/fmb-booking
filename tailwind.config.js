@@ -7,7 +7,13 @@ module.exports = {
 	],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				volt: '#ceff00',
+				plat: '#58595b',
+				lightgray: '#e5e4ez',
+			},
+		},
 	},
 	variants: {
 		extend: {},

@@ -4,16 +4,16 @@ import {Popover, Transition} from '@headlessui/react'
 import {FiAlignJustify, FiX} from 'react-icons/fi'
 
 const navigation = [
-	{name: 'Product', href: '#'},
-	{name: 'Features', href: '#'},
-	{name: 'Marketplace', href: '#'},
-	{name: 'Company', href: '#'},
+	{name: 'SERVICES', href: '#'},
+	{name: 'LOCATIONS', href: '#'},
+	{name: 'FRANCHISE', href: '#'},
+	{name: 'ABOUT', href: '#'},
 ]
 
 function NavBar() {
 	return (
 		<div>
-			<div className='relative pt-6 pb-16 sm:pb-24'>
+			<div className='absolute w-full pt-6 pb-16 sm:pb-24'>
 				<Popover>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6'>
 						<nav
@@ -24,9 +24,13 @@ function NavBar() {
 								<div className='flex items-center justify-between w-full md:w-auto'>
 									<a href='#'>
 										<span className='sr-only'>
-											Workflow
+											Fix My Boat Logo
 										</span>
-										<p>LOGO</p>
+										<img
+											className='h-16'
+											src='https://fixmyboatusa.com/wp-content/uploads/2021/11/FMB-fullcolor-1.png'
+											alt=''
+										/>
 									</a>
 									<div className='-mr-2 flex items-center md:hidden'>
 										<Popover.Button className='bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
@@ -46,7 +50,7 @@ function NavBar() {
 									<a
 										key={item.name}
 										href={item.href}
-										className='font-medium text-gray-500 hover:text-gray-900'
+										className='font-medium text-white hover:text-gray-900'
 									>
 										{item.name}
 									</a>
@@ -56,9 +60,9 @@ function NavBar() {
 								<span className='inline-flex rounded-md shadow'>
 									<a
 										href='#'
-										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'
+										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-plat bg-volt hover:bg-gray-50'
 									>
-										Log in
+										Book Online
 									</a>
 								</span>
 							</div>
