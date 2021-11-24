@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '../public/css/animate.css';
+
 html,
 body {
 	padding: 0;
@@ -24,3 +26,27 @@ a {
 	top: 0;
 }
 
+#scrollUp {
+	display: none;
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	bottom: 30px;
+	right: 25px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background-image: url('https://github.com/twinveeinc/fmb-website/blob/main/public/images/back-to-top.png');
+	background-repeat: no-repeat;
+	background-position: 50% 48%;
+	background-color: rgba(10, 10, 10, 0.25);
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+#scrollUp:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}

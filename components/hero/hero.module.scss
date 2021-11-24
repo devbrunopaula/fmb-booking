@@ -1,9 +1,13 @@
 .hero {
 	background: linear-gradient(
-			180deg,
-			rgba(44, 44, 44, 0.267),
-			rgba(204, 255, 0, 0.692) 26%,
-			rgba(94, 117, 3, 0.849) 86%
+			// 180deg,
+			// rgba(44, 44, 44, 0.781),
+			// rgba(204, 255, 0, 0.87) 31%,
+			// rgba(83, 97, 5, 0.445) 90%
+			rgba(31, 31, 31, 0.63),
+			rgba(204, 255, 0, 0.733) 36%,
+			
+			rgba(63, 63, 63, 0.815)
 		),
 		url('https://twinvee.com/wp-content/uploads/260viva5.jpg');
 }
@@ -16,7 +20,7 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.356);
+	background: rgba(0, 0, 0, 0.438);
 	// height: 78px;
 	margin: 0 auto;
 }

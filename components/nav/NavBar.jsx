@@ -1,7 +1,8 @@
 import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
-
+import {useEffect, useState} from 'react'
 import {FiAlignJustify, FiX} from 'react-icons/fi'
+import {scroll} from '../../utils/utils'
 
 const navigation = [
 	{name: 'SERVICES', href: '#'},
@@ -11,16 +12,20 @@ const navigation = [
 ]
 
 function NavBar() {
+	useEffect(() => {
+		window.addEventListener('scroll', scroll)
+	}, [])
+
 	return (
 		<div>
-			<div className='absolute w-full pt-6 pb-16 sm:pb-24'>
+			<div className='  absolute w-full pt-6 pb-16 sm:pb-24'>
 				<Popover>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6'>
 						<nav
 							className='relative flex items-center justify-between sm:h-10 md:justify-center'
 							aria-label='Global'
 						>
-							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
+							<div className=' items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
 								<div className='flex items-center justify-between w-full md:w-auto'>
 									<a href='#'>
 										<span className='sr-only'>
@@ -60,7 +65,7 @@ function NavBar() {
 								<span className='inline-flex rounded-md shadow'>
 									<a
 										href='#'
-										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-plat bg-volt hover:bg-gray-50'
+										className=' inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-plat bg-volt hover:bg-gray-50 hover:text-gray-900'
 									>
 										Book Online
 									</a>

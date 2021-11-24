@@ -5,28 +5,27 @@ export default function Hero() {
 	return (
 		<div className={`h-screen ${styles.hero}`}>
 			<div
-				className={`h-screen flex justify-center items-start pt-36 lg:items-center lg:pt-0 ${styles.test1}`}
+				className={`h-screen flex justify-center items-start pt-36 lg:items-center lg:pt-0 `}
 			>
-				<div className={`flex flex-col items-center ${styles.test2}`}>
-					<img
-						className={`hidden ${styles.logo}`}
+				<div className={`flex flex-col items-center `}>
+					{/* <img
+						className={`${styles.logo}`}
 						src='https://fixmyboatusa.com/wp-content/uploads/2021/11/FMB-fullcolor-1.png'
 						alt=''
-					/>
-					<h1 className='text-5xl py-5 md:text-8xl font-bold text-gray-900 text-center'>
+					/> */}
+					<h1 className='text-5xl py-5 md:text-8xl font-bold text-gray-700 text-center wow fadeInLeft'>
 						On-Demand Mobile
 					</h1>
-					<h3 className='text-6xl  font-light text-gray-200 italic'>
+					<h3 className='text-7xl  wow fadeInRight font-light text-gray-600 italic'>
 						BOAT REPAIR
 					</h3>
-					<div className='text-center pt-2 text-white'>
-						Providing honest, reliable & affordable service beyond
-						your expectations for over 35 years
+					<div className='text-center text-lg pt-2 text-white'>
+						No more hassle. We come directly to you.
 					</div>
 					<div className={`relative hover:border-gray-500 pt-8 `}>
 						<button
 							type='button'
-							className='bg-transparent shadow-2xl border-2 hover:bg-blue text-white font-bold text-2xl  hover:text-white py-2 px-4 border-blue hover:border-plat rounded'
+							className={`${styles.booknowBtn} bg-transparent shadow-2xl border-2 bg-volt text-gray-900 hover:bg-gray-700 hover:text-volt font-bold text-2xl   py-2 px-4 border-blue hover:border-plat hover:transition ease-in-out duration-700 rounded`}
 						>
 							Book Now
 						</button>
@@ -35,7 +34,7 @@ export default function Hero() {
 			</div>
 			<div className={`${styles.footer} h-52 lg:h-20`}>
 				<div
-					className={`container flex flex-col justify-center mx-auto px-4 items-center h-scree lg:flex-row  `}
+					className={`container flex flex-col justify-center mx-auto px-4 items-center h-full lg:flex-row  `}
 				>
 					<div className='lg:flex-1'>
 						<p
@@ -61,7 +60,7 @@ export default function Hero() {
 								placeholder='Enter a zipcode'
 							/>
 							<button
-								className={`text-2xl my-2 h-12 rounded  bg-volt shadow-2xl text-plat lg:m-2 lg:px-4 lg:text-xl`}
+								className={` text-2xl my-2 h-12 rounded  bg-volt shadow-2xl text-plat hover:text-gray-900 hover:transition ease-in-out duration-700 lg:m-2 lg:px-4 lg:text-xl`}
 							>
 								SUBMIT
 							</button>
