@@ -6,38 +6,6 @@
 			rgba(94, 117, 3, 0.849) 86%
 		),
 		url('https://twinvee.com/wp-content/uploads/260viva5.jpg');
-
-	// background:
-	// /* top, transparent red, faked with gradient */ linear-gradient(
-	// 		rgba(49, 49, 49, 0.849),
-	// 		rgba(204, 255, 0, 0.808)
-	// 	),
-	// 	/* bottom, image */
-	// 		url('https://twinvee.com/wp-content/uploads/260viva5.jpg');
-}
-
-.test2 {
-	margin-top: 20px;
-	padding: 10px;
-	position: relative;
-	font-family: rift;
-	font-weight: 500;
-
-	padding: 2px 10px 4px 10px;
-	padding: 5px 7px 5px 9px;
-	padding: 2px 10px 4px 10px;
-	border: solid 2px #fff;
-
-	button {
-		font-size: 25px;
-		color: white;
-	}
-
-	.heroarrow {
-		position: absolute;
-		top: 0;
-		color: white;
-	}
 }
 
 .logo {
@@ -54,19 +22,17 @@
 }
 
 .test {
-	display: flex;
-	justify-content: space-between;
 	border: solid red;
 }
 
 .test1 {
-	display: flex;
-	justify-content: space-between;
 	border: solid rgb(30, 3, 150);
 }
 
+.test2 {
+	border: solid red;
+}
+
 .test3 {
-	display: flex;
-	justify-content: space-between;
 	border: solid rgb(23, 54, 3);
 }
