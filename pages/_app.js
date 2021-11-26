@@ -1,4 +1,6 @@
 import {useEffect, useState} from 'react'
+// import {OrderProvider} from '../context/state'
+import {AppWrapper} from '../context/state'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import PreLoader from '../layout/'
@@ -18,5 +20,9 @@ export default function MyApp({Component, pageProps}) {
 	{
 		preloader && <PreLoader />
 	}
-	return getLayout(<Component {...pageProps} />)
+	return getLayout(
+		<AppWrapper>
+			<Component {...pageProps} />
+		</AppWrapper>
+	)
 }

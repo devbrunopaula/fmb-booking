@@ -32,9 +32,9 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
-			<div className={`${styles.footer} h-52 lg:h-20`}>
+			<div className={`${styles.footer}  h-52 lg:h-20`}>
 				<div
-					className={`container flex flex-col justify-center mx-auto px-4 items-center h-full lg:flex-row  `}
+					className={`container  flex flex-col justify-center mx-auto px-4 items-center h-full lg:flex-row  `}
 				>
 					<div className='lg:flex-1'>
 						<p
